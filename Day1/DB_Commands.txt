@@ -1,0 +1,38 @@
+
+CREATE TABLE contacts(
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	name VARCHAR(50) NOT NULL,
+	nick_name VARCHAR(20),
+	address VARCHAR(50),
+	home_phone VARCHAR(20),
+	work_phone VARCHAR(20),
+	cell_phone VARCHAR(20),
+	email VARCHAR(50),
+	birthday date,
+	website VARCHAR(50),
+	profession VARCHAR(20),
+	PRIMARY KEY (id)
+);
+
+
+INSERT INTO contacts(
+	name,nick_name,address,home_phone,work_phone,cell_phone,email,birthday,website,profession)
+VALUES (
+	"Bruce Wayne", "Batman", "XYZ Batcave", "9876543210", "6278287326",
+	"9182872363", "batman@gmail.com", "1976/02/03", "batblog.com", "Superhero"
+);
+
+
+INSERT INTO contacts(
+	name,nick_name,address,home_phone,work_phone,cell_phone,email,birthday,website,profession)
+VALUES (
+	"Jake Beralta", "Genius Detective", "B99", "9876543210", "6278287326",
+	"9182872363", "jackie@gmail.com", "1976/02/03", "b99.com", "Policeman"
+);
+
+INSERT INTO contacts(
+	name,nick_name,address,home_phone,work_phone,cell_phone,email,birthday,website,profession)
+VALUES (
+	"Ronnie Weasley", "Wizard", "Gryffindor House, Hogwarts", "9876543210", "6278287326",
+	"9182872363", "Ron@gmail.com", "1976/02/03", "R&H.com", "Brilliant"
+);
